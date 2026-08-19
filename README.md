@@ -7,7 +7,11 @@ webcal calendars).
 ## How it works
 
 1. `.github/workflows/update-calendar.yml` runs `generate_calendar.py`
-   every 6 hours (and on manual trigger).
+   once a week (Friday evenings, UTC) and on manual trigger. The
+   schedule is intentionally light to keep requests to the third-party
+   fixtures proxy to a minimum -- use the Actions tab's "Run workflow"
+   button any time you want a fresher check (e.g. Saturday morning
+   before a match).
 2. `generate_calendar.py` fetches all fixtures for the division from
    `faapi.jwhsolutions.co.uk` (a third-party JSON proxy for the FA
    Full-Time system), filters them down to Orton Rangers U11, and writes
