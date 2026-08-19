@@ -21,10 +21,10 @@ webcal calendars).
    subscribe to.
 
 Subscribe from `public/index.html`:
-`https://cytbot.github.io/orton-rangers-calendar/`
+`https://cytbot.github.io/rangers-calendar/`
 
 Direct calendar URL (for the "add subscribed calendar" step):
-`webcal://cytbot.github.io/orton-rangers-calendar/orton-rangers-u11.ics`
+`webcal://cytbot.github.io/rangers-calendar/orton-rangers-u11.ics`
 
 ## Why a third-party proxy, not the FA site directly
 
