@@ -3,7 +3,12 @@ name: Update Orton Rangers U11 Calendar
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    # Once a week, Friday evening (UTC) -- catches most fixture changes
+    # announced ahead of Saturday matches while keeping requests to the
+    # fixtures proxy to a minimum. Use "Run workflow" above any time you
+    # want an up-to-date check outside this schedule (e.g. Saturday
+    # morning before you leave for a match).
+    - cron: "0 18 * * 5"
 
 permissions:
   contents: read
